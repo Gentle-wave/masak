@@ -8,8 +8,7 @@ class Formbox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50.0,
-      width: 310.0,
+     
       child: Material(
        elevation:20,
         shadowColor: Colors.white60,
