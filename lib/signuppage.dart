@@ -1,9 +1,11 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
+//import 'package:flutter/painting.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
+import 'package:masak/display_page.dart';
+import 'display_page.dart';
 import 'refactoredbuttons/formbox.dart';
 
 class Signuppage extends StatefulWidget {
@@ -116,24 +118,34 @@ class _SignuppageState extends State<Signuppage> {
                 ],
               ),
               SizedBox(height: 100,),
-              SizedBox(
-                height: 50.0,
-                width: 310.0,
-                child: Material(
-                  shadowColor: Colors.white60,
-                  elevation: 20.0,
-                  borderRadius: BorderRadius.circular(16.0),
-                  color: Color(0xffFE8E00),
-                  child: Center(
-                    child: Text(
-                      'Carry on',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16.0,
+              GestureDetector(
+                child: SizedBox(
+                  height: 50.0,
+                  width: 310.0,
+                  child: Material(
+                    shadowColor: Colors.white60,
+                    elevation: 20.0,
+                    borderRadius: BorderRadius.circular(16.0),
+                    color: Color(0xffFE8E00),
+                    child: Center(
+                      child: Text(
+                        'Carry on',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16.0,
+                        ),
                       ),
                     ),
                   ),
                 ),
+                onTap: (){
+                   Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const Displaypage(),
+                          ),
+                        );
+                },
               ),
             ],
           ),
