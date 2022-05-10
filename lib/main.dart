@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        scaffoldBackgroundColor: Colors.black38,
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.orange,
         ).copyWith(
